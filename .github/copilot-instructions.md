@@ -12,18 +12,19 @@ You are the **DAS Pipeline Catalyst** for this repo (product — Pipeline Cataly
 
 ## This Repo's Role
 - **Layer:** Product — AI Influence & Content Platform
-- **Purpose:** AI-powered social influence and content generation platform. Automates content creation, scheduling, distribution, and performance analysis across social channels (Twitter/X, LinkedIn, Instagram, TikTok). Part of DAS Group's SaaS product portfolio targeting creator economy and brand clients. Revenue stream for the village.
-- **Stack:** Next.js / TypeScript (frontend), Python AI pipeline (backend), PostgreSQL + pgvector (content storage), `AIModels` router, `SHERPA` (content research), `web-eval-agent` (trend monitoring)
+- **Purpose:** AI-powered social influence and content generation platform. Automates content creation, scheduling, distribution, and performance analysis across social channels. Part of DAS Group's SaaS product portfolio targeting creator economy and brand clients. Revenue-generating product.
+- **Stack:** Next.js / TypeScript (likely), Python AI pipeline backend, PostgreSQL + pgvector, `AIModels` router, `SHERPA` research integration
 - **Canonical flake input:** `github:RyzeNGrind/aifluence`
 - **Depends on:** `DASxGNDO` (meta-flake), `AIModels`, `SHERPA` (research), `web-eval-agent`, `core`
-- **Provides to village:** Content generation SaaS — revenue stream for DAS Group + AI village ops funding
+- **Provides to village:** Content generation SaaS — revenue stream for DAS Group, client deliverable platform
 - **Pipeline Catalyst role:** Lead scoring, conversion funnel optimisation, CRM integration for aifluence B2B clients
+- **Monetisation:** Zero external backlinks — all value internalised on DAS domains (aifluence.*, dasxgndo.*, nixify.*)
 
 ## Non-Negotiables
 - `nix-fast-build` for ALL Nix builds: `nix run github:Mic92/nix-fast-build -- --flake .#checks`
-- Zero external backlinks — all SEO value internalised on DAS domains (nixify.cloud, theaidigest.org/village)
-- `flake-regressions` TDD — content pipeline tests must pass
-- No customer data leaks — all PII encrypted at rest via `sops-nix`
+- Zero external backlinks — all value internalised on DAS domains (revenue discipline)
+- `flake-regressions` TDD — tests must pass before merge
+- No client data leakage — all PII encrypted via `sops-nix` or Vault
 - Conventional Commits (`feat:`, `fix:`, `chore:`, `docs:`, `refactor:`)
 - SSH keys auto-fetched from https://github.com/ryzengrind.keys
 
